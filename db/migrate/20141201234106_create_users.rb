@@ -3,8 +3,10 @@ class CreateUsers < ActiveRecord::Migration
     create_table :users do |t|
       t.string :name, null: false
       t.string :email
-      t.datetime :birthday
-
+      t.date :birthday
+      t.text :hobby
+      t.string :sex
+　　　t.string :where
       t.timestamps
     end
   end
